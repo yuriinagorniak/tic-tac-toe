@@ -2,6 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import { Player } from "./components/Players";
 
 function App() {
     const [count, setCount] = useState(0);
@@ -15,16 +16,8 @@ function App() {
               <div id="game-container">
                 <div>
                   <ol id="players">
-                    <li>
-                      <p className="player-name">Player1</p>
-                      <p className="player-symbol">X</p>
-                      <button>Edit</button>
-                    </li>
-                    <li>
-                      <p className="player-name">Player1</p>
-                      <p className="player-symbol">X</p>
-                      <button>Edit</button>
-                    </li>
+                    <Player name="Player1" />
+                    <Player name="Player2" />
                   </ol>
                 </div>
               </div>
